@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87DABE131EEFB7C200B80ED8 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DABE121EEFB7C200B80ED8 /* GameKit.framework */; };
 		87ED6D221EEF06B2004B9526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ED6D211EEF06B2004B9526 /* AppDelegate.swift */; };
 		87ED6D241EEF06B2004B9526 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ED6D231EEF06B2004B9526 /* ViewController.swift */; };
 		87ED6D271EEF06B2004B9526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87ED6D251EEF06B2004B9526 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87DABE121EEFB7C200B80ED8 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		87ED6D1E1EEF06B2004B9526 /* ImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ED6D211EEF06B2004B9526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87ED6D231EEF06B2004B9526 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87DABE131EEFB7C200B80ED8 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87DABE111EEFB7C200B80ED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87DABE121EEFB7C200B80ED8 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87ED6D151EEF06B2004B9526 = {
 			isa = PBXGroup;
 			children = (
 				87ED6D201EEF06B2004B9526 /* ImageView */,
 				87ED6D1F1EEF06B2004B9526 /* Products */,
+				87DABE111EEFB7C200B80ED8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +108,13 @@
 				TargetAttributes = {
 					87ED6D1D1EEF06B2004B9526 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QUA3M33FMW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -262,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QUA3M33FMW;
 				INFOPLIST_FILE = ImageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gamearena.ImageView;
@@ -274,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QUA3M33FMW;
 				INFOPLIST_FILE = ImageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gamearena.ImageView;
@@ -301,6 +321,7 @@
 				87ED6D321EEF06B2004B9526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
